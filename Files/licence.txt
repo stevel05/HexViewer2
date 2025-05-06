@@ -1,0 +1,8 @@
+Hexview distributed to B4x forums : https://www.b4x.com/android/forum/threads/b4j-hex-view-customview.112588/post-701943
+
+Author Stevel05
+(c) 2019 Stevel05
+
+This code is provided free for the benefit of the B4x Community. If you use this code or a derivitive in a commercial application or benefit from the utility, please consider donating to the author to keep the goodwill flowing and encourage the provision of more examples and support. 
+
+Click To dismiss

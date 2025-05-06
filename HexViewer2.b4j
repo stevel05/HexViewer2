@@ -1,0 +1,125 @@
+﻿AppType=JavaFX
+Build1=Default,b4j.example
+File1=1.bjl
+File2=about.bjl
+File3=aboutlayout.bjl
+File4=find.bjl
+File5=findform.bjl
+File6=hexview.bjl
+File7=licence.txt
+FileGroup1=Default Group
+FileGroup2=Default Group
+FileGroup3=Default Group
+FileGroup4=Default Group
+FileGroup5=Default Group
+FileGroup6=Default Group
+FileGroup7=Default Group
+Group=Default Group
+Library1=jcore
+Library10=jnumberspinner-b4x
+Library2=jfx
+Library3=javaobject
+Library4=jxui
+Library5=byteconverter
+Library6=jscrollbar-b4x
+Library7=jrandomaccessfile
+Library8=jreflection
+Library9=jkeyevent-b4x
+Module1=AboutClass
+Module2=FindClass
+Module3=HexV_Utils
+Module4=HexView
+NumberOfFiles=7
+NumberOfLibraries=10
+NumberOfModules=4
+Version=10.2
+@EndOfDesignText@
+#Region Project Attributes 
+	#MainFormWidth: 800
+	#MainFormHeight: 600 
+#End Region
+
+'#If Release
+'    #CustomBuildAction: 2, c:\windows\system32\cmd.exe, /c copy  D:\Documents\AnywhereSoftware\B4xLibs\HexViewer2\Objects\HexViewer2.jar D:\NoinstApps\B4j\HexViewer\HexViewer.jar
+'#End If
+
+'Find Libraries ide://run?file=%WINDIR%\System32\cmd.exe&Args=/c&Args=C:\NoInst\B4j\FindLibraries\FindLibraries.exe&Args=B4J&Args=%B4X%&Args=%ADDITIONAL%&Args=%PROJECT%&Args=%PROJECT_NAME%.B4J
+'Archive modules ide://run?file=%WINDIR%\System32\cmd.exe&Args=/c&Args=C:\noinst\B4j\ArchiveProjectModules\ArchiveProjectModules.exe&Args=%PROJECT%\%PROJECT_NAME%.b4j
+Sub Process_Globals
+	Private fx As JFX
+	Private MainForm As Form
+	Private HexView1 As HexView
+
+End Sub
+
+Sub AppStart (Form1 As Form, Args() As String)
+	MainForm = Form1
+	MainForm.RootPane.LoadLayout("1") 'Load the layout file.
+	MainForm.Show
+	
+	
+	Sleep(0)
+
+	Dim Text As String = $"Hey, Luke! May the Force be with you. Red Five standing by. Kid, I've flown from one side of this galaxy to the other. I've seen a lot of strange stuff, but I've never seen anything to make me believe there's one all-powerful Force controlling everything. There's no mystical energy field that controls my destiny. It's all a lot of simple tricks and nonsense.
+
+What?! No! Alderaan is peaceful. We have no weapons. You can't possibly… A tremor in the Force. The last time I felt it was in the presence of my old master. I call it luck. A tremor in the Force. The last time I felt it was in the presence of my old master.
+
+I find your lack of faith disturbing. Hokey religions and ancient weapons are no match for a good blaster at your side, kid. What!? All right. Well, take care of yourself, Han. I guess that's what you're best at, ain't it?
+
+You're all clear, kid. Let's blow this thing and go home! In my experience, there is no such thing as luck. Obi-Wan is here. The Force is with him. I have traced the Rebel spies to her. Now she is my only link to finding their secret base.
+
+Ye-ha! What?! I can't get involved! I've got work to do! It's not that I like the Empire, I hate it, but there's nothing I can do about it right now. It's such a long way from here. Obi-Wan is here. The Force is with him.
+
+Alderaan? I'm not going to Alderaan. I've got to go home. It's late, I'm in for it as it is. Look, I ain't in this for your revolution, and I'm not in it for you, Princess. I expect to be well paid. I'm in it for the money.
+
+Red Five standing by. Look, I can take you as far as Anchorhead. You can get a transport there to Mos Eisley or wherever you're going. Your eyes can deceive you. Don't trust them. What!?
+
+I want to come with you to Alderaan. There's nothing for me here now. I want to learn the ways of the Force and be a Jedi, like my father before me. The plans you refer to will soon be back in our hands.
+
+I'm trying not to, kid. In my experience, there is no such thing as luck. I have traced the Rebel spies to her. Now she is my only link to finding their secret base. I can't get involved! I've got work to do! It's not that I like the Empire, I hate it, but there's nothing I can do about it right now. It's such a long way from here.
+
+I suggest you try it again, Luke. This time, let go your conscious self and act on instinct. Leave that to me. Send a distress signal, and inform the Senate that all on board were killed. I'm trying not to, kid.
+
+Obi-Wan is here. The Force is with him. Your eyes can deceive you. Don't trust them. No! Alderaan is peaceful. We have no weapons. You can't possibly… Look, I ain't in this for your revolution, and I'm not in it for you, Princess. I expect to be well paid. I'm in it for the money.
+
+I want to come with you to Alderaan. There's nothing for me here now. I want to learn the ways of the Force and be a Jedi, like my father before me. The Force is strong with this one. I have you now. Hokey religions and ancient weapons are no match for a good blaster at your side, kid.
+
+Don't underestimate the Force. I'm trying not to, kid. Look, I can take you as far as Anchorhead. You can get a transport there to Mos Eisley or wherever you're going. As you wish.
+
+A tremor in the Force. The last time I felt it was in the presence of my old master. Look, I ain't in this for your revolution, and I'm not in it for you, Princess. I expect to be well paid. I'm in it for the money.
+
+Look, I can take you as far as Anchorhead. You can get a transport there to Mos Eisley or wherever you're going. I care. So, what do you think of her, Han? He is here. I want to come with you to Alderaan. There's nothing for me here now. I want to learn the ways of the Force and be a Jedi, like my father before me.
+
+She must have hidden the plans in the escape pod. Send a detachment down to retrieve them, and see to it personally, Commander. There'll be no one to stop us this time! I suggest you try it again, Luke. This time, let go your conscious self and act on instinct.
+
+Don't underestimate the Force. I'm trying not to, kid. What!? You don't believe in the Force, do you?
+
+Ye-ha! What!? I can't get involved! I've got work to do! It's not that I like the Empire, I hate it, but there's nothing I can do about it right now. It's such a long way from here. But with the blast shield down, I can't even see! How am I supposed to fight?
+
+You mean it controls your actions? Remember, a Jedi can feel the Force flowing through him. You mean it controls your actions? Kid, I've flown from one side of this galaxy to the other. I've seen a lot of strange stuff, but I've never seen anything to make me believe there's one all-powerful Force controlling everything. There's no mystical energy field that controls my destiny. It's all a lot of simple tricks and nonsense.
+
+Your eyes can deceive you. Don't trust them. Dantooine. They're on Dantooine. All right. Well, take care of yourself, Han. I guess that's what you're best at, ain't it? You mean it controls your actions?"$
+	
+	Dim Data() As Byte = Text.Trim.GetBytes("UTF8")
+'	HexView1.AddData(Array As Byte(1,2,3,4,255),False)
+	HexView1.AddData(Data,False)
+'
+'	Sleep(5000)
+'	HexView1.Font = fx.CreateFont("Arial",10,False,False)
+'	HexView1.ShowHeader = False
+'HexView1.BackgroundColor = fx.Colors.Black
+'HexView1.TextColor = fx.Colors.white
+'Sleep(3000)
+'	HexView1.ShowHeader = True
+End Sub
+
+
+
+'Return true to allow the default exceptions handler to handle the uncaught exception.
+Sub Application_Error (Error As Exception, StackTrace As String) As Boolean
+	Return True
+End Sub
+
+Sub Mainform_CloseRequest (EventData As Event)
+	HexView1.close
+End Sub
