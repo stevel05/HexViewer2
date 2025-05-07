@@ -1,6 +1,6 @@
 ### Hex View CustomView
 
-<img title="" src="file:///D:/AnywhereSoftware/B4j/B4xLibs/HexViewer2/PONotes/Readme_images/HexView.png" alt="Hexview.png" width="390" data-align="center">
+<img title="" src="Readme_images/HexView.png" alt="Hexview.png" width="390" data-align="center">
 
 Explore any size file
 
