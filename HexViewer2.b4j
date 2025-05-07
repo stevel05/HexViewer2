@@ -7,6 +7,7 @@ File4=find.bjl
 File5=findform.bjl
 File6=hexview.bjl
 File7=licence.txt
+File8=numberspinner.bjl
 FileGroup1=Default Group
 FileGroup2=Default Group
 FileGroup3=Default Group
@@ -14,24 +15,28 @@ FileGroup4=Default Group
 FileGroup5=Default Group
 FileGroup6=Default Group
 FileGroup7=Default Group
+FileGroup8=Default Group
 Group=Default Group
-Library1=jcore
-Library10=jnumberspinner-b4x
-Library2=jfx
-Library3=javaobject
-Library4=jxui
-Library5=byteconverter
-Library6=jscrollbar-b4x
-Library7=jrandomaccessfile
-Library8=jreflection
-Library9=jkeyevent-b4x
-Module1=AboutClass
-Module2=FindClass
-Module3=HexV_Utils
-Module4=HexView
-NumberOfFiles=7
-NumberOfLibraries=10
-NumberOfModules=4
+Library1=byteconverter
+Library2=javaobject
+Library3=jcore
+Library4=jfx
+Library5=jrandomaccessfile
+Library6=jreflection
+Library7=jxui
+Module1=|absolute|D:\AnywhereSoftware\B4j\aaaIDELinks\aaaIDElinks
+Module10=ScrollBar
+Module2=AboutClass
+Module3=FindClass
+Module4=HexV_Utils
+Module5=HexView
+Module6=KeyCode
+Module7=KeyEvent
+Module8=KeyEventHelper
+Module9=NumberSpinnerCV
+NumberOfFiles=8
+NumberOfLibraries=7
+NumberOfModules=10
 Version=10.2
 @EndOfDesignText@
 #Region Project Attributes 
@@ -39,12 +44,6 @@ Version=10.2
 	#MainFormHeight: 600 
 #End Region
 
-'#If Release
-'    #CustomBuildAction: 2, c:\windows\system32\cmd.exe, /c copy  D:\Documents\AnywhereSoftware\B4xLibs\HexViewer2\Objects\HexViewer2.jar D:\NoinstApps\B4j\HexViewer\HexViewer.jar
-'#End If
-
-'Find Libraries ide://run?file=%WINDIR%\System32\cmd.exe&Args=/c&Args=C:\NoInst\B4j\FindLibraries\FindLibraries.exe&Args=B4J&Args=%B4X%&Args=%ADDITIONAL%&Args=%PROJECT%&Args=%PROJECT_NAME%.B4J
-'Archive modules ide://run?file=%WINDIR%\System32\cmd.exe&Args=/c&Args=C:\noinst\B4j\ArchiveProjectModules\ArchiveProjectModules.exe&Args=%PROJECT%\%PROJECT_NAME%.b4j
 Sub Process_Globals
 	Private fx As JFX
 	Private MainForm As Form
@@ -101,16 +100,8 @@ You mean it controls your actions? Remember, a Jedi can feel the Force flowing t
 Your eyes can deceive you. Don't trust them. Dantooine. They're on Dantooine. All right. Well, take care of yourself, Han. I guess that's what you're best at, ain't it? You mean it controls your actions?"$
 	
 	Dim Data() As Byte = Text.Trim.GetBytes("UTF8")
-'	HexView1.AddData(Array As Byte(1,2,3,4,255),False)
 	HexView1.AddData(Data,False)
-'
-'	Sleep(5000)
-'	HexView1.Font = fx.CreateFont("Arial",10,False,False)
-'	HexView1.ShowHeader = False
-'HexView1.BackgroundColor = fx.Colors.Black
-'HexView1.TextColor = fx.Colors.white
-'Sleep(3000)
-'	HexView1.ShowHeader = True
+
 End Sub
 
 

@@ -197,7 +197,7 @@ Private Sub Menu_Action
 				Catch
 					Log(LastException)
 					AboutClass1.SetLicence($"Author Stevel05
-(c) 2019 Stevel05
+(c) 2019-2025 Stevel05
 
 This code is provided free for the benefit of the B4x Community. If you use this code or a derivitive in a commercial application or benefit financially from the utility, please consider donating to the author to keep the goodwill flowing and encourage the provision of more examples and support. 
 
